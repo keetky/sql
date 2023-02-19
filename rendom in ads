@@ -1,0 +1,5 @@
+UPDATE `ads` SET `height`= 4.4 + ROUND(RAND() * 1.5, 1);
+
+UPDATE `ads` SET `weight`= FLOOR(RAND() * (15 - 1 + 1)) + 45;
+
+UPDATE `ads` SET `eye_color`= ELT(FLOOR(RAND() * 10) + 1,"black","brown","gray","blue","green","amber","hazel","purple","light brown","light blue"),`hair_color`= ELT(FLOOR(RAND() * 10) + 1,"black","red brown","cocoa","golden","golden bronze","dark","kddvcx","lksgd","iuyiurt","trueur");
